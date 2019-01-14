@@ -1,0 +1,24 @@
+Oliver File Format
+------------------
+
+
+The Oliver file format is a quick demo of how formats work.   It always stores dimensions of an object.
+
+For example, an Oliver file could contain the following information:
+
+Toaster:  27cm x 16cm x 16cm.
+
+
+
+The format itself is described as:
+
+
+Header (4 bytes, always OLIV)
+Length (in cm, 4 bytes)
+Width (in cm, 4 bytes)
+Height (in cm, 4 bytes)
+Name of object (as string, variable length, to end of file)
+
+
+Example file can be found in example.OLV
+
